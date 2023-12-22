@@ -1,0 +1,22 @@
+.copy-btn {
+  background-color: rgb(29 78 216);
+}
+
+.copy-btn:active {
+  background-color: rgb(4, 37, 128);
+}
+
+.refresh-btn {
+  background-color: rgb(24, 35, 67);
+}
+
+.refresh-btn:active {
+  background-color: rgb(14, 25, 60);
+}
+
+@media only screen and (width<=400px) {
+  .options-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
