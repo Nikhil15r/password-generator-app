@@ -7,7 +7,7 @@ function App() {
     length: 8,
     numberAllowed: false,
     charAllowed: false,
-    refresh: 0, // Step 1: Add a refresh token state
+    refresh: 0, 
   });
 
   const passwordRef = useRef(null);
@@ -38,7 +38,6 @@ function App() {
   }, [state.password]);
 
   const handleRefreshPassword = () => {
-    // Step 2: Increment the refresh token to trigger password regeneration
     setState((prev) => ({ ...prev, refresh: prev.refresh + 1 }));
   };
 
@@ -65,7 +64,6 @@ function App() {
             className='copy-btn ouline-none text-white px-3 py-0.5 shrink-0'>
             Copy
           </button>
-          {/* Step 3: Add the refresh password button */}
           <button
             onClick={handleRefreshPassword}
             className='refresh-btn text-center px-3 py-0.5 shrink-0'>
